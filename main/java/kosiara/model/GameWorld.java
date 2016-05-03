@@ -22,9 +22,9 @@ public class GameWorld {
         for (int y = topLeft.getY(); y < bottomRight.getY(); y++) {
             for (int x = topLeft.getX(); x < bottomRight.getX(); x++) {
 
-                Position curentPoition = new Position(x, y);
+                Position currentPosition = new Position(x, y);
 
-                if (entities.containsKey(curentPoition))
+                if (entities.containsKey(currentPosition))
                     System.out.print("#\t");
                 else
                     System.out.print(".\t");
